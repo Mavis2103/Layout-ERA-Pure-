@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: white;
+}
+
+.fs__smallest {
+  font-size: 12px;
+}
+
+.fs__details {
+  font-size: 14px;
+}
+
+.fs__text {
+  font-size: 18px;
+}
+
+.fs__title {
+  font-size: 28px;
+}
+
+.fs__title--main {
+  font-size: 42px;
+}

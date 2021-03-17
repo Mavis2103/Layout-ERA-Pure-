@@ -1,0 +1,117 @@
+@import "./general.scss";
+.header {
+  &__logo {
+    > img {
+      width: 200px;
+    }
+  }
+  &__link {
+    a {
+      font-weight: bold;
+      color: white;
+      margin: 0 10px;
+      &:hover {
+        font-weight: bolder;
+        color: $color-text-title;
+      }
+    }
+  }
+  &__button {
+    a {
+      padding: 10px 20px;
+      &:nth-child(1) {
+        color: black;
+      }
+      &:nth-child(2):hover {
+        color: black;
+      }
+    }
+  }
+}
+.footer {
+  > .row {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: $color-secondary;
+    background-image: url(../../public/images/bg-subscribe.jpg);
+  }
+  &__link {
+    a {
+      color: white;
+    }
+  }
+}
+.home {
+  &__content {
+    &__header {
+      font-size: 3em;
+      line-height: 60px;
+      font-weight: bold;
+    }
+    &__sub {
+      font-size: 1em;
+    }
+  }
+  &__video {
+    background-color: gray;
+    height: 400px;
+  }
+  &__pros {
+    &__img {
+      height: 400px;
+      > img {
+        height: inherit;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__products {
+    a {
+      color: white;
+      &:hover {
+        color: $color-text-title;
+      }
+    }
+    &__card {
+      border-radius: 16px;
+    }
+    &__img {
+      height: 200px;
+      > img {
+        border-radius: 16px;
+        height: inherit;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__posts {
+    &__card {
+      border-radius: 16px;
+      a {
+        color: white;
+        &:hover {
+          color: $color-text-title;
+        }
+      }
+    }
+    &__img {
+      height: 170px;
+      > img {
+        border-radius: 16px;
+        height: inherit;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@mixin card {
+  a {
+    color: white;
+    &:hover {
+      color: $color-text-title;
+    }
+  }
+}

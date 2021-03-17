@@ -1,0 +1,92 @@
+$color-primary1: #092424;
+$color-primary2: #18675d;
+$color-secondary: #ffc367;
+$color-text-title: #ffd597;
+$color-text: #fafafa;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+  &:hover {
+    color: $color-text-title;
+  }
+}
+
+body {
+  color: $color-text;
+  font-family: "SVN-Book Avo";
+}
+
+.fs__smallest {
+  font-size: 12px;
+}
+.fs__details {
+  font-size: 14px;
+}
+.fs__text {
+  font-size: 18px;
+}
+.fs__title {
+  font-size: 28px;
+  font-family: "SVN-Book Antiqua", sans-serif;
+  color: $color-text-title;
+}
+.fs__title--main {
+  font-size: 42px;
+  color: $color-text-title;
+  font-family: "SVN-Book Antiqua", sans-serif;
+}
+
+.button-secondary {
+  background-color: $color-secondary;
+  color: $color-text;
+}
+.button-secondary--outline {
+  color: $color-text;
+  box-shadow: 0 0 0 2px $color-secondary inset;
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
+.bg__custom {
+  &--1 {
+    background-image: url(../../public/images/breadcrumbs-bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 70px;
+      transform: rotate(180deg);
+      background-image: url(../../public/images/overlay-slider.webp);
+      background-size: contain;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 70px;
+      background-image: url(../../public/images/overlay-slider.webp);
+      background-size: contain;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+    }
+  }
+}
+@font-face {
+  font-family: "SVN-Book Antiqua";
+  src: url("../../public/fonts/SVN-Book\ Antiqua.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SVN-Book Avo";
+  src: url("../../public/fonts/SVN-Avo.ttf") format("truetype");
+}
