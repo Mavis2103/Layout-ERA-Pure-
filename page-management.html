@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/stylesheets/management.css" />
+    <script
+      src="https://kit.fontawesome.com/26ac62eb53.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+  </head>
+  <body class="home">
+    <!-- Header -->
+    <section class="header navbar container">
+      <div class="header__logo">
+        <img src="./public/images/logo-footer.png" alt="Era Logo" />
+      </div>
+      <div class="header__user">
+        <a href="">
+          <span>Nguyen Van A</span>
+          <img src="./public/images/meow.jpg" alt="Ảnh đại diện" />
+        </a>
+      </div>
+    </section>
+    <!-- Main -->
+    <section class="container mt-3">
+      <header class="fs__title--main fw-bolder mb-3">Quản lý báo cáo</header>
+      <div class="d-flex">
+        <div class="management__card">
+          <p class="mb-0">Số dư code</p>
+          <p class="fs__title--main">26</p>
+        </div>
+        <div class="management__card">
+          <p class="mb-0">Số code đã dùng</p>
+          <p class="fs__title--main">4</p>
+        </div>
+        <div class="management__form">
+          <p class="fs__title">Tạo mã mới</p>
+          <form action="">
+            <input class="management__form__input" type="text" name="" id="" />
+            <input
+              class="management__form__button"
+              type="submit"
+              value="Tạo mã mới"
+            />
+          </form>
+          <p class="fs__smallest mt-4">Chú ý:...</p>
+        </div>
+      </div>
+      <p class="fs__title fw-bolder mb-3 mt-5">Danh sách khách hàng</p>
+    </section>
+    <main class="management__table container-fluid">
+      <div class="container">
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Code</th>
+            <th>Họ và tên</th>
+            <th>Tình trạng</th>
+            <th>Link kích hoạt</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <button class="management__table--icon" data-share="342T3F">
+                342T3F
+                <i class="far fa-clipboard"></i>
+              </button>
+            </td>
+            <td>Võ Quyết Thắng</td>
+            <td>Đã dùng</td>
+            <td>
+              <input
+                readonly
+                type="text"
+                value="http://127.0.0.1:5500/page-management.html"
+              />
+              <input
+                data-share="http://127.0.0.1:5500/asdgegseg.html"
+                class="management__table--button"
+                data-bs-toggle="modal"
+                data-bs-target="#management__table--modal"
+                type="button"
+                value="Sao chép"
+              />
+            </td>
+          </tr>
+        </table>
+        <input type="text" id="temp" readonly />
+      </div>
+      <!-- Modal -->
+      <!-- <div
+        class="modal fade"
+        id="management__table--modal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal__custom">
+            <div class="modal-header modal__custom__header">
+              <h5 class="modal-title" id="staticBackdropLabel">Mã kích hoạt</h5>
+              <button
+                type="button"
+                class="btn-close modal__custom__buton--close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modal__custom__body">
+              <p class="text-center display-6">4DO4N34G34</p>
+              <p class="text-center fs__details">
+                Vui lòng sao chép và gửi đến khách hàng
+              </p>
+            </div>
+            <div class="modal-footer modal__custom__footer">
+              <button
+                type="button"
+                class="btn button-secondary--outline"
+                data-bs-dismiss="modal"
+              >
+                Đóng
+              </button>
+              <button type="button" class="btn button-secondary fw-bolder">
+                Xong
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+    <!-- Footer -->
+    <section class="footer container my-5">
+      <div class="row py-5">
+        <div class="col-8">
+          <p class="fs__text fw-bold">CÔNG TY TNHH VIỆT NAM MASTERS © 2020</p>
+          <div class="d-flex fs__details text-white-50">
+            <div class="col-6">
+              <p>Giấy chứng nhận đăng ký doanh nghiệp số: 0316390525</p>
+              <p>Cấp ngày: 16/07/2020.</p>
+              <p>Nơi cấp: Sở Kế hoạch và Đầu tư TP.Hồ Chí Minh.</p>
+            </div>
+            <div class="col-6">
+              <p>
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                Lầu 2, Tòa nhà ITAXA, 19 Võ Văn Tần, P.6, Q.3, Thành phố Hồ Chí
+                Minh
+              </p>
+              <p>
+                <span>
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                028 38220814
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__link col-4">
+          <p class="fs__text fw-bold">Liên kết</p>
+          <nav>
+            <ul class="list-unstyled">
+              <li>
+                <a href="">Trang chủ</a>
+              </li>
+              <li>
+                <a href="">Về chúng tôi</a>
+              </li>
+              <li>
+                <a href="">Bài viết</a>
+              </li>
+              <li>
+                <a href="">FAQs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener("click", (e) => {
+        if (
+          ["management__table--button", "management__table--icon"].includes(
+            e.target.className
+          )
+        ) {
+          let input_temp = document.getElementById("temp");
+          let value_to_copy = e.target.dataset.share;
+          input_temp.value = value_to_copy;
+          input_temp.select();
+          document.execCommand("copy");
+          e.target.value = "Đã sao chép";
+        }
+      });
+    </script>
+  </body>
+</html>

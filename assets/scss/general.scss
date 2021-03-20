@@ -2,7 +2,9 @@ $color-primary1: #092424;
 $color-primary2: #18675d;
 $color-secondary: #ffc367;
 $color-text-title: #ffd597;
+$color-card: #2b2b2b4b;
 $color-text: #fafafa;
+$color-body: #121212;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +22,7 @@ a {
 body {
   color: $color-text;
   font-family: "SVN-Book Avo";
+  background-color: $color-body;
 }
 
 .fs__smallest {
@@ -89,4 +92,57 @@ body {
 @font-face {
   font-family: "SVN-Book Avo";
   src: url("../../public/fonts/SVN-Avo.ttf") format("truetype");
+}
+.header {
+  &__logo {
+    > img {
+      width: 200px;
+    }
+  }
+  &__link {
+    a {
+      font-weight: bold;
+      color: white;
+      margin: 0 10px;
+      &:hover {
+        font-weight: bolder;
+        color: $color-text-title;
+      }
+    }
+  }
+  &__button {
+    a {
+      padding: 10px 20px;
+      &:nth-child(1) {
+        color: black;
+      }
+      &:nth-child(2):hover {
+        color: black;
+      }
+    }
+  }
+  &__user {
+    span {
+      margin-right: 10px;
+    }
+    img {
+      $size: 40px;
+      width: $size;
+      height: $size;
+      border-radius: 100%;
+    }
+  }
+}
+.footer {
+  > .row {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: $color-secondary;
+    background-image: url(../../public/images/bg-subscribe.jpg);
+  }
+  &__link {
+    a {
+      color: white;
+    }
+  }
 }

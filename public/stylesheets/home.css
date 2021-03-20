@@ -15,6 +15,7 @@ a:hover {
 body {
   color: #fafafa;
   font-family: "SVN-Book Avo";
+  background-color: #121212;
 }
 
 .fs__smallest {
@@ -110,6 +111,14 @@ body {
 }
 .header__button a:nth-child(2):hover {
   color: black;
+}
+.header__user span {
+  margin-right: 10px;
+}
+.header__user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }
 
 .footer > .row {
