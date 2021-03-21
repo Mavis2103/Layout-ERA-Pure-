@@ -105,6 +105,26 @@
         background-color: #2b2b2bfa;
         padding: $p;
         width: 40%;
+        .button-text {
+          background-color: rgba(255, 255, 255, 0);
+          border: 0;
+          color: $color-text-title;
+          font-weight: bolder;
+        }
+      }
+    }
+    .modal__custom {
+      background-color: #2b2b2bfa;
+      &__header,
+      &__footer {
+        border: 0;
+      }
+      &__button--close {
+        color: #fafafa !important;
+        font-weight: bolder;
+        &:hover {
+          color: $color-text-title;
+        }
       }
     }
     .disable {

@@ -36,7 +36,7 @@
       <div class="step__nav d-flex justify-content-center">
         <div class="step"><span>1</span> Nhập thông tin</div>
         <div class="step"><span>2</span> Xem demo báo cáo</div>
-        <div class="step"><span>3</span> Thanh toán</div>
+        <div class="step"><span>3</span> Nhập mã kích hoạt</div>
       </div>
       <main class="step__form">
         <section>
@@ -120,43 +120,117 @@
           </div>
           <div class="step__form--general page--3 d-flex">
             <div class="step__form--general--left">
-              <p class="fs__title--main fw-bolder">Thanh toán</p>
-              <p class="fs__text">
-                Vui lòng chuyển khoản theo thông tin dưới đây để chúng tôi có
-                thể kích hoạt bản báo cáo cho bạn.
-              </p>
-              <p class="fs__title--main mt-5">VIETCOMBANK</p>
-              <p class="d-flex justify-content-between">
-                Số tài khoản: <span>19030001119333</span>
-              </p>
-              <p class="d-flex justify-content-between">
-                Số điện thoại: <span>0123456789</span>
-              </p>
-              <p class="d-flex justify-content-between">
-                Tên đầy đủ: <span>Nguyễn Văn A</span>
-              </p>
-              <p class="d-flex justify-content-between">
-                Số tiền: <span>499.000 VND</span>
-              </p>
-              <p
-                class="fw-bolder border-top pt-3"
-                style="
-                  border-color: #ffc367 !important;
-                  border-width: 2px !important;
-                "
-              >
-                Lưu ý:
-              </p>
-              <p class="fs__details">
-                Vui lòng kiểm tra lại thông tin trước khi chuyển để tránh sự cố
-                đáng tiếc.
-              </p>
+              <p class="fs__title--main fw-bolder">Nhập mã kích hoạt</p>
+              <div class="step__form__input">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Nhập mã kích hoạt"
+                />
+                <p class="fs__text fw-bolder mt-4">Lưu ý:</p>
+                <p class="fs__details">
+                  Nếu bạn chưa có mã kích hoạt bạn cần đăng kí để nhận bài báo
+                  cáo.
+                </p>
+              </div>
             </div>
-            <div class="step__form--general--right d-flex align-content-center">
-              <p class="fs__text text-center my-auto">
-                Bạn sẽ nhận được thông báo sau khi tài khoản đơợc kích hoạt
-                thành công. Nếu cần hỗ trợ gọi Hotline: 0123456789.
-              </p>
+            <div class="step__form--general--right">
+              <p class="fs__text fw-bolder">Đăng ký theo hướng dẫn</p>
+              <div class="mt-5">
+                <p class="fs__title fw-bolder">Cách 1</p>
+                <p class="fs__text">
+                  Liên hệ nơiời giới thiệu để nhận mã ưu đãi
+                </p>
+              </div>
+              <div class="mt-3">
+                <p class="fs__title fw-bolder">Cách 2</p>
+                <p class="fs__text">
+                  Chat trực tiếp với hỗ trợ viên của ERA VIETNAM
+                  <a href="" class="fw-bolder" style="color: #ffd597"
+                    >Tại đây</a
+                  >
+                </p>
+              </div>
+              <div class="mt-3">
+                <p class="fs__title fw-bolder">Cách 3</p>
+                <p class="fs__text">
+                  Chuyển khoản để nhận mã kích hoạt
+                  <button
+                    class="button-text"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Tại đây
+                  </button>
+                </p>
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content modal__custom">
+                      <div class="modal-header modal__custom__header">
+                        <button
+                          type="button"
+                          class="btn-close modal__custom__button--close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="fs__details">
+                          Vui lòng chuyển khoản theo thông tin dưới đây để chúng
+                          tôi có thể kích hoạt bản báo cáo cho bạn.
+                        </p>
+                        <p class="fs__title mt-3">VIETCOMBANK</p>
+                        <p class="d-flex justify-content-between">
+                          Số tài khoản: <span>19030001119333</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                          Số điện thoại: <span>0123456789</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                          Tên đầy đủ: <span>Nguyễn Văn A</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                          Số tiền: <span>499.000 VND</span>
+                        </p>
+                        <p
+                          class="fw-bolder border-top pt-3"
+                          style="
+                            border-color: #ffc367 !important;
+                            border-width: 2px !important;
+                          "
+                        >
+                          Lưu ý:
+                        </p>
+                        <p class="fs__details">
+                          Vui lòng kiểm tra lại thông tin trước khi chuyển để
+                          tránh sự cố đáng tiếc.
+                        </p>
+                      </div>
+                      <div class="modal-footer modal__custom__footer">
+                        <button
+                          type="button"
+                          class="btn button-secondary--outline"
+                          data-bs-dismiss="modal"
+                        >
+                          Đóng
+                        </button>
+                        <button type="button" class="btn button-secondary">
+                          Xong
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -165,7 +239,9 @@
             role="button"
             class="prev step__from__button button-secondary--outline button-disable"
           >
-            <span><i class="fas fa-long-arrow-alt-left"></i></span>
+            <span style="margin-right: 10px"
+              ><i class="fas fa-long-arrow-alt-left"></i
+            ></span>
             Trở về
           </button>
           <button
@@ -173,7 +249,9 @@
             class="next step__from__button button-secondary"
           >
             Tiếp theo
-            <span><i class="fas fa-long-arrow-alt-right"></i></span>
+            <span style="margin-left: 10px"
+              ><i class="fas fa-long-arrow-alt-right"></i
+            ></span>
           </button>
         </section>
       </main>
@@ -249,7 +327,7 @@
             step[1].classList.remove("active");
             step[2].classList.remove("active");
             next.innerHTML =
-              'Tiếp theo<span><i class="fas fa-long-arrow-alt-right"></i></span>';
+              'Tiếp theo<span style="margin-left: 10px"><i class="fas fa-long-arrow-alt-right"></i></span>';
             break;
           case 2:
             step[1].classList.add("active");
@@ -259,7 +337,7 @@
             step[0].classList.remove("active");
             step[2].classList.remove("active");
             next.innerHTML =
-              'Tiếp theo<span><i class="fas fa-long-arrow-alt-right"></i></span>';
+              'Tiếp theo<span style="margin-left: 10px"><i class="fas fa-long-arrow-alt-right"></i></span>';
             break;
           case 3:
             step[2].classList.add("active");
