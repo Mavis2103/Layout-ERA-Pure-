@@ -1,0 +1,27 @@
+@import "./general.scss";
+.policy {
+  &__header {
+    display: grid;
+    place-items: center;
+    padding: 50px 0;
+    font-weight: bolder;
+  }
+  &__main {
+    margin: 50px auto;
+    gap: 20px;
+    &__package {
+      padding: 50px 70px;
+      border: 1px solid $color-secondary;
+      border-radius: 16px;
+      li {
+        $border: 1px solid $color-secondary;
+        border-top: $border;
+        // border-bottom: $border;
+      }
+      &:nth-child(2) {
+        border-width: 2px;
+        background-color: $color-card;
+      }
+    }
+  }
+}
