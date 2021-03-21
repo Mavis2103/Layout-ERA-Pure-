@@ -1,0 +1,117 @@
+@import "general.scss";
+.step_by_step {
+  .step__nav {
+    margin: 40px 0;
+    .step {
+      margin: 0 20px;
+      &:hover {
+        cursor: pointer;
+      }
+      > span {
+        place-items: center;
+        padding: 4px 10px;
+        border-radius: 50%;
+        border: 3px solid;
+      }
+    }
+    .active {
+      font-weight: bolder;
+      color: $color-text-title;
+    }
+  }
+  .step__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__video {
+      margin: 30px auto 50px;
+      width: 90%;
+      height: 300px;
+      background-color: gray;
+    }
+    &--icon {
+      color: $color-text-title;
+      > i {
+        margin: 10px 20px 0;
+        font-size: 42px;
+        // width: 100px;
+      }
+    }
+    &__button {
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      > button {
+        padding: 10px 15px;
+        border: 0;
+        font-weight: bolder;
+        &:nth-child(1) {
+          background-color: rgba(255, 255, 255, 0);
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.385);
+          }
+        }
+        &:nth-child(2) {
+          color: #000;
+          &:hover {
+            background-color: #ffc267d7;
+          }
+        }
+      }
+    }
+    &--general {
+      $p: 50px;
+      background-color: $color-card;
+      &--left {
+        padding: $p;
+        width: 60%;
+        .step__form__input {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          > input {
+            margin: 10px 0;
+            text-indent: 20px;
+            background-color: #121212;
+            color: #fafafa;
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid #fafafa;
+            font-weight: bold;
+            outline: none;
+            &:focus {
+              border: 3px solid $color-secondary;
+            }
+          }
+          input[type="date"] {
+            text-indent: 10px;
+            &::-webkit-calendar-picker-indicator {
+              cursor: pointer;
+              filter: invert(1);
+              margin-right: 10px;
+            }
+          }
+          input::-webkit-input-placeholder {
+            color: #fafafa;
+          }
+        }
+      }
+      &--right {
+        background-color: #2b2b2bfa;
+        padding: $p;
+        width: 40%;
+      }
+    }
+    .disable {
+      display: none !important;
+    }
+    .button-disable {
+      visibility: hidden;
+    }
+  }
+}
