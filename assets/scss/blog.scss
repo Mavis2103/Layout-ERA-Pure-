@@ -1,0 +1,22 @@
+@import "general.scss";
+.blog__card {
+  $radius: 12px;
+  background-color: $color-card;
+  border-radius: $radius;
+  &__img {
+    > img {
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  &__body {
+    padding: 20px;
+    &__title {
+      line-height: 30px;
+      font-weight: bolder;
+    }
+  }
+}
